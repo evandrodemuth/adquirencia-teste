@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adquirência Academy — Para Lívia</title>
+  <meta name="description" content="Mini-curso interativo de adquirência para profissionais de PLD." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ==========================================
+     TELA DE BOAS-VINDAS
+     ========================================== -->
+<div id="welcome-screen">
+  <div class="welcome-card">
+    <div class="logo">💳</div>
+    <h1>Adquirência Academy</h1>
+    <p class="subtitle">Olá, <span id="welcome-name">Lívia!</span><br>Sua jornada de aprendizado começa aqui.</p>
+
+    <div class="features">
+      <div class="feature-item"><span>📚</span> 5 módulos completos</div>
+      <div class="feature-item"><span>🎓</span> 15 aulas didáticas</div>
+      <div class="feature-item"><span>✅</span> 5 quizzes avaliativos</div>
+      <div class="feature-item"><span>📊</span> Progresso visual</div>
+      <div class="feature-item"><span>🔍</span> Foco em PLD</div>
+      <div class="feature-item"><span>🏆</span> Certificado ao final</div>
+    </div>
+
+    <button class="btn-primary" id="btn-start">Começar agora →</button>
+  </div>
+</div>
+
+<!-- ==========================================
+     APP PRINCIPAL
+     ========================================== -->
+<div id="app">
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar">
+    <div class="sidebar-header">
+      <div class="brand">💳 Adquirência Academy</div>
+      <div class="progress-overview">
+        <div class="prog-label">
+          <span>Progresso geral</span>
+          <span id="overall-progress-label">0%</span>
+        </div>
+        <div class="prog-bar-wrap">
+          <div class="prog-bar-fill" id="overall-progress-bar" style="width:0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" id="sidebar-nav">
+      <!-- Gerado por JS -->
+    </nav>
+
+    <div class="sidebar-footer">
+      <button class="dash-btn active" id="dash-nav-btn">
+        🏠 Painel de Progresso
+      </button>
+    </div>
+  </aside>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main id="main-content">
+
+    <!-- DASHBOARD -->
+    <div id="dashboard-view">
+      <div id="dash-welcome-text" class="dash-welcome">
+        <!-- Gerado por JS -->
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">📊</div>
+          <div class="stat-value" id="stat-progress">0%</div>
+          <div class="stat-label">Progresso Total</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📚</div>
+          <div class="stat-value" id="stat-modules">0/5</div>
+          <div class="stat-label">Módulos Concluídos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">✅</div>
+          <div class="stat-value" id="stat-quizzes">0</div>
+          <div class="stat-label">Quizzes Feitos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-value" id="stat-avg">-</div>
+          <div class="stat-label">Média nos Quizzes</div>
+        </div>
+      </div>
+
+      <h2 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;color:var(--text-muted);">Módulos do Curso</h2>
+      <div class="modules-grid" id="modules-grid">
+        <!-- Gerado por JS -->
+      </div>
+
+      <div id="certificate-area" class="hidden" style="margin-top:32px;"></div>
+    </div>
+
+    <!-- AULA -->
+    <div id="lesson-view">
+      <div class="lesson-header">
+        <div class="breadcrumb" id="lesson-breadcrumb"></div>
+        <h1 id="lesson-title"></h1>
+        <div class="lesson-meta" id="lesson-meta"></div>
+      </div>
+
+      <div class="lesson-content" id="lesson-body">
+        <!-- Gerado por JS -->
+      </div>
+
+      <div class="lesson-nav">
+        <button class="btn-lesson-nav" id="btn-prev-lesson" disabled>← Anterior</button>
+        <button class="btn-lesson-nav primary" id="btn-next-lesson">Próxima →</button>
+      </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quiz-view">
+      <div class="quiz-header">
+        <h2 id="quiz-module-title">Quiz</h2>
+        <p id="quiz-module-sub"></p>
+        <div class="quiz-progress-bar">
+          <div class="quiz-progress-fill" id="quiz-prog-bar" style="width:0%"></div>
+        </div>
+      </div>
+
+      <div id="quiz-question-area">
+        <!-- Gerado por JS -->
+      </div>
+
+      <div class="quiz-actions" id="quiz-actions">
+        <!-- Gerado por JS -->
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
