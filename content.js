@@ -14,7 +14,7 @@ const COURSE = {
       title: "Fundamentos da Adquirência",
       description: "Entenda o que é adquirência, seus conceitos centrais e por que ela existe no mercado financeiro.",
       icon: "🏦",
-      color: "#6366f1",
+      color: "#dc2626",
       lessons: [
         {
           id: "mod1-l1",
@@ -284,7 +284,7 @@ const COURSE = {
       title: "Produtos e Operações",
       description: "Conheça os produtos oferecidos pelos adquirentes, tipos de captura e modalidades de pagamento.",
       icon: "💳",
-      color: "#8b5cf6",
+      color: "#b91c1c",
       lessons: [
         {
           id: "mod2-l1",
@@ -563,7 +563,7 @@ const COURSE = {
       title: "Regulação e Supervisão",
       description: "Entenda o arcabouço regulatório que governa a adquirência no Brasil e as obrigações das IPs.",
       icon: "⚖️",
-      color: "#06b6d4",
+      color: "#991b1b",
       lessons: [
         {
           id: "mod3-l1",
@@ -821,7 +821,7 @@ const COURSE = {
       title: "Tipologias e Red Flags",
       description: "Aprenda a identificar padrões suspeitos, tipologias de lavagem e sinais de alerta na adquirência.",
       icon: "🔍",
-      color: "#f59e0b",
+      color: "#7f1d1d",
       lessons: [
         {
           id: "mod4-l1",
@@ -1093,7 +1093,7 @@ const COURSE = {
       title: "PLD Aplicada — Casos Práticos",
       description: "Consolide o aprendizado com casos práticos, estudos de situação e boas práticas de PLD na adquirência.",
       icon: "🎓",
-      color: "#10b981",
+      color: "#450a0a",
       lessons: [
         {
           id: "mod5-l1",
