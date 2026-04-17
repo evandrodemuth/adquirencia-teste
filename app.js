@@ -272,6 +272,7 @@ function renderDashboard() {
   }
 
   renderSidebar();
+  refreshIcons();
 }
 
 // ---- Lição ----
@@ -338,6 +339,7 @@ function showLesson(lessonId) {
   window.scrollTo(0, 0);
 
   renderSidebar();
+  refreshIcons();
 }
 
 // ---- Quiz ----
@@ -370,6 +372,7 @@ function showQuiz(moduleId) {
 
   renderQuestion();
   renderSidebar();
+  refreshIcons();
 }
 
 function renderQuestion() {
@@ -490,6 +493,11 @@ function showQuizResult() {
   renderSidebar();
 }
 
+// ---- Ícones Lucide ----
+function refreshIcons() {
+  if (window.lucide) lucide.createIcons();
+}
+
 // ---- Inicialização ----
 function startApp() {
   document.getElementById('welcome-screen').style.display = 'none';
@@ -513,4 +521,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (prog > 0 && btn) {
     btn.textContent = `Continuar onde parei (${prog}% concluído) →`;
   }
+
+  refreshIcons();
 });

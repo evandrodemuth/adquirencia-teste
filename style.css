@@ -110,7 +110,13 @@ body {
   gap: 8px;
 }
 
-.feature-item span { font-size: 1.1rem; }
+.feature-item svg { width: 16px; height: 16px; color: var(--primary); flex-shrink: 0; }
+
+/* Ícones Lucide globais */
+.stat-icon svg { width: 28px; height: 28px; color: var(--primary); }
+.brand svg { width: 18px; height: 18px; vertical-align: middle; }
+.dash-btn svg { width: 16px; height: 16px; }
+.mod-icon svg { width: 14px; height: 14px; }
 
 .btn-primary {
   background: linear-gradient(135deg, #dc2626, #991b1b);

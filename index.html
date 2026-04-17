@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
@@ -24,12 +25,12 @@
     <p class="subtitle">Olá, <span id="welcome-name">Lívia!</span><br>Sua jornada de aprendizado começa aqui.</p>
 
     <div class="features">
-      <div class="feature-item"><span>📚</span> 5 módulos completos</div>
-      <div class="feature-item"><span>🎓</span> 15 aulas didáticas</div>
-      <div class="feature-item"><span>✅</span> 5 quizzes avaliativos</div>
-      <div class="feature-item"><span>📊</span> Progresso visual</div>
-      <div class="feature-item"><span>🔍</span> Foco em PLD</div>
-      <div class="feature-item"><span>🏆</span> Certificado ao final</div>
+      <div class="feature-item"><i data-lucide="book-open"></i> 5 módulos completos</div>
+      <div class="feature-item"><i data-lucide="graduation-cap"></i> 15 aulas didáticas</div>
+      <div class="feature-item"><i data-lucide="circle-check-big"></i> 5 quizzes avaliativos</div>
+      <div class="feature-item"><i data-lucide="bar-chart-2"></i> Progresso visual</div>
+      <div class="feature-item"><i data-lucide="shield-check"></i> Foco em PLD</div>
+      <div class="feature-item"><i data-lucide="award"></i> Certificado ao final</div>
     </div>
 
     <button class="btn-primary" id="btn-start">Começar agora →</button>
@@ -47,7 +48,7 @@
   <!-- SIDEBAR -->
   <aside id="sidebar">
     <div class="sidebar-header">
-      <div class="brand">💳 Adquirência Academy</div>
+      <div class="brand"><i data-lucide="credit-card"></i> Adquirência Academy</div>
       <div class="progress-overview">
         <div class="prog-label">
           <span>Progresso geral</span>
@@ -65,7 +66,7 @@
 
     <div class="sidebar-footer">
       <button class="dash-btn active" id="dash-nav-btn">
-        🏠 Painel de Progresso
+        <i data-lucide="layout-dashboard"></i> Painel de Progresso
       </button>
     </div>
   </aside>
@@ -81,22 +82,22 @@
 
       <div class="stats-grid">
         <div class="stat-card">
-          <div class="stat-icon">📊</div>
+          <div class="stat-icon"><i data-lucide="trending-up"></i></div>
           <div class="stat-value" id="stat-progress">0%</div>
           <div class="stat-label">Progresso Total</div>
         </div>
         <div class="stat-card">
-          <div class="stat-icon">📚</div>
+          <div class="stat-icon"><i data-lucide="book-open"></i></div>
           <div class="stat-value" id="stat-modules">0/5</div>
           <div class="stat-label">Módulos Concluídos</div>
         </div>
         <div class="stat-card">
-          <div class="stat-icon">✅</div>
+          <div class="stat-icon"><i data-lucide="circle-check-big"></i></div>
           <div class="stat-value" id="stat-quizzes">0</div>
           <div class="stat-label">Quizzes Feitos</div>
         </div>
         <div class="stat-card">
-          <div class="stat-icon">🎯</div>
+          <div class="stat-icon"><i data-lucide="target"></i></div>
           <div class="stat-value" id="stat-avg">-</div>
           <div class="stat-label">Média nos Quizzes</div>
         </div>
@@ -147,7 +148,7 @@
       </div>
     </div>
 
-      <footer style="text-align:center;padding:32px 0 24px;color:#b91c1c;font-size:.8rem;opacity:.6;">
+    <footer style="text-align:center;padding:32px 0 24px;color:#b91c1c;font-size:.8rem;opacity:.6;">
       Feito com ❤️ pelo seu querido esposo 😇
     </footer>
   </main>
